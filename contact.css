@@ -21,9 +21,15 @@
     align-items: center;
 }
 
-#header-container h3{
+#header-container #logo{
     position: fixed;
     right: 20px;
+}
+
+
+
+#logo a{
+  text-decoration: none !important;
 }
 
 .container-fluid{
@@ -118,7 +124,7 @@ header{
     justify-content: center;
     align-content: center;
     position: relative;
-    background: rgb(164, 164, 164);
+    background: rgb(241, 241, 241);
   }
 
   #row-box{
@@ -135,8 +141,10 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  background: white;
 }
   #contact-box{
     display: flex;
-    height: 100px;
+    border-radius: 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
