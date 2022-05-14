@@ -1,7 +1,23 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+.fluid-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto 40px;
+  height: 100vh;
+}
+
+
 #header-container{
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    max-height: 5vh;
+    min-height: 60px;
     align-items: center;
 }
 
@@ -92,4 +108,33 @@ header{
   }
   .menu__item:hover {
     background-color: #CFD8DC;
+  }
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    z-index: -1;
+    background: rgb(164, 164, 164);
+  }
+
+  #row-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .container-fluid{
+   display: flex;
+   justify-content: center;
+ }
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  #contact-box{
+    display: flex;
+    height: 100px;
   }
