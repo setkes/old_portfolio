@@ -1,15 +1,6 @@
-$(document).ready(function(){
-    $(".fancybox").fancybox({
-          openEffect: "none",
-          closeEffect: "none"
-      });
-      
-      $(".zoom").hover(function(){
-          
-          $(this).addClass('transition');
-      }, function(){
-          
-          $(this).removeClass('transition');
-      });
-  });
-      
+/* Demo purposes only */
+$(".hover").mouseleave(
+    function() {
+      $(this).removeClass("hover");
+    }
+  );
