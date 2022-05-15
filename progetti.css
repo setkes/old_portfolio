@@ -38,6 +38,7 @@
 
 header {
   background: white;
+  position: fixed;
 }
 
 .menu__box a {

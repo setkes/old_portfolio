@@ -40,7 +40,7 @@
 
 }
 header{
-
+  position: fixed;
 }
 
 .menu__box a{
