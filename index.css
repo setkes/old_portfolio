@@ -41,7 +41,7 @@
   
   }
   header{
-    position: sticky;
+   
   }
   
   .menu__box a{
@@ -65,8 +65,8 @@
       left: 0 !important;
     }
     .menu__btn {
-      position: fixed;
-      top: 30px;
+      position: relative;
+      top: 17px;
       left: 20;
       width: 26px;
       height: 26px;
