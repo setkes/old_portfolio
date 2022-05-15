@@ -38,7 +38,9 @@
 
 header {
   background: white;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 .menu__box a {
