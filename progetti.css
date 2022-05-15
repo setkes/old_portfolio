@@ -137,11 +137,7 @@ main {
   background: rgb(241, 241, 241);
 }
 
-#row-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .container-fluid {
   display: flex;
@@ -155,12 +151,6 @@ footer {
   background: white;
 }
 
-#contact-box {
-  display: flex;
-  height: 100px;
-  border-radius: 0px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
 
 body {
   background-color: #1d1d1d !important;
@@ -286,18 +276,7 @@ img.zoom {
   display: none;
 }
 
-#container-top{
 
-  height: 300px !important;
-  
-}
-
-#progetti{
-  background: rgb(217, 217, 217);
-  width: auto;
-  height: auto;
-  padding: 25px;
-}
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
 .snip1577 {
@@ -305,10 +284,8 @@ img.zoom {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
+  margin: 20px;
+  width: auto;
   color: #fff;
   text-align: left;
   font-size: 16px;
@@ -425,3 +402,5 @@ img.zoom {
   -webkit-transition-delay: 0.35s;
   transition-delay: 0.35s;
 }
+
+* { color:#fff; text-decoration: none;}
