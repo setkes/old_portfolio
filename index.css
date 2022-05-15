@@ -146,3 +146,17 @@
     }
 
     * { color:rgb(52, 58, 64); text-decoration: none !important;}
+
+    #para{
+      height: 50px;
+    }
+
+
+    @media screen and (max-width: 992px) {
+      
+      .display-4{
+        font-size: 32px;
+      }
+     
+
+    }

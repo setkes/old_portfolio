@@ -277,7 +277,9 @@ img.zoom {
 }
 
 
-
+#title{
+  color: rgb(52, 58, 64);
+}
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
 .snip1577 {
   font-family: 'Montserrat', Arial, sans-serif;
@@ -403,4 +405,3 @@ img.zoom {
   transition-delay: 0.35s;
 }
 
-* { color:#fff; text-decoration: none;}
