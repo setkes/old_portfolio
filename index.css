@@ -23,7 +23,7 @@
   }
   
   #header-container #logo{
-      position: sticky;
+    position: fixed;
       right: 20px;
   }
   
