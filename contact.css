@@ -151,10 +151,10 @@ footer{
   }
 
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 745px) {
       
     .display-4{
-      font-size: 32px;
+      font-size: 24px;
     }
    
 
