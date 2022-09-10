@@ -13,7 +13,8 @@
 }
 
 img{
-  width: 100%;
+  
+  object-fit: contain;
 }
 
 #header-container {
