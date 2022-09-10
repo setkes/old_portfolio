@@ -13,8 +13,8 @@
 }
 
 img{
-  height: auto;
-  object-fit: contain;
+  height: 300px;
+  object-fit:cover;
 }
 
 #header-container {
