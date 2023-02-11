@@ -108,13 +108,12 @@
        img{
         display: none;
        }
-
-       .container{
-        position: absolute;
-        top: 250px;
-       }
       
-       li a {
+       h1{
+        font-size: 5rem;
+       }
+
+       #myModal, p{
         font-size: 3rem;
        }
       
@@ -176,7 +175,7 @@ svg {
 <body>
   <div class="container d-flex flex-column">
     <div id="info" class="d-flex justify-content-between w-100 mb-2">
-      <h1 style="font-size: 5rem;" class="align-self-center">
+      <h1 class="align-self-center">
         Alessandro <span style="color: #6c6c6c;">Monti</span></h1>
     </div>
     <div class="square w-100 d-flex">
@@ -197,7 +196,7 @@ svg {
     </div>
 
     <a href="#" data-toggle="modal" class="align-self-center underline font-weight-bold" data-target="#myModal"
-      style="font-size: 2rem; position:relative; top: 35px;">Maggiori
+      style=" position:relative; top: 35px;">Maggiori
       informazioni</a>
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
