@@ -40,7 +40,12 @@
       margin-left: 25px;
     }
 
-
+    #myModal{
+      font-size: 3rem;
+    }
+    #text{
+      font-size: 3rem;
+    }
     #contact:focus {
       box-shadow: none;
     }
@@ -56,6 +61,10 @@
       margin: 0;
       display: grid;
 
+    }
+
+    h1{
+      font-size: 5rem;
     }
 
     h3 {
@@ -110,11 +119,15 @@
           display: none;
         }
 
-        #info h1 {
+        h1 {
           font-size: 2.3rem;
         }
 
         #text {
+          font-size: 1.2rem;
+        }
+
+        #myModal{
           font-size: 1.2rem;
         }
 
@@ -191,9 +204,9 @@
 </head>
 
 <body>
-  <div class="container d-flex flex-column"  style="position: relative; top: 35px;">
+  <div class="container-fluid d-flex flex-column"  style="position: relative; top: 35px;">
     <div id="info" class="d-flex justify-content-between w-100 mb-2">
-      <h1 class="align-self-center" style="font-size: 5rem;">
+      <h1 class="align-self-center">
         Alessandro <span style="color: #6c6c6c;">Monti</span></h1>
     </div>
     <div class="square w-100 d-flex">
@@ -214,7 +227,7 @@
     </div>
 
     <a href="#" data-toggle="modal" class="align-self-center underline font-weight-bold" data-target="#myModal"
-      style=" position:relative; top: 35px; font-size: 3rem;">Maggiori
+      style=" position:relative; top: 35px;">Maggiori
       informazioni</a>
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
