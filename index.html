@@ -45,15 +45,8 @@
       box-shadow: none;
     }
 
-    body {
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
-}
 
-html {
-  height: -webkit-fill-available;
-}
+
     .hover:hover {
       --_p: 0%;
     }
@@ -117,11 +110,11 @@ html {
         display: none;
        }
       
-       h1{
+       #info h1{
         font-size: 5em;
        }
 
-       #myModal, p{
+       #text{
         font-size: 3em;
        }
       
@@ -187,7 +180,7 @@ svg {
         Alessandro <span style="color: #6c6c6c;">Monti</span></h1>
     </div>
     <div class="square w-100 d-flex">
-      <p style="font-size: 2rem;">
+      <p id="text" style="font-size: 2rem;">
         Sono un Junior Web Developer diplomato come Informatico di gestione SSS, ho esperienze nell'utilizzo di Laravel
         (MVC), sviluppo Front-End, WordPress,
         progettazione database e
@@ -208,7 +201,7 @@ svg {
       informazioni</a>
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog modal-dialog-centered" style="bottom: 250px;">
+      <div class="modal-dialog modal-dialog-centered">
         <!-- Modal content-->
         <div class="modal-content ">
           <div class="modal-header">
