@@ -120,15 +120,15 @@
         }
 
         h1 {
-          font-size: 2.3rem !important;
+          font-size: 2.3rem;
         }
 
         #text {
-          font-size: 1.2rem !important;
+          font-size: 1.2rem;
         }
 
         #myModal{
-          font-size: 1.2rem !important;
+          font-size: 1.2rem;
         }
 
       }
@@ -205,12 +205,15 @@
 
 <body>
   <div class="container d-flex flex-column"  style="position: relative; top: 35px;">
-    <div id="info" class="d-flex justify-content-between w-100 mb-2">
-      <h1 class="align-self-center">
+    <div id="info" class="p-3">
+
+
+    <div class="d-flex justify-content-between w-100 mb-2">
+      <h1 class="align-self-center" style="font-size: 4rem;">
         Alessandro <span style="color: #6c6c6c;">Monti</span></h1>
     </div>
     <div class="square w-100 d-flex">
-      <p id="text" style="font-size: 3rem;">
+      <p id="text" style="font-size: 1.5rem;">
         Sono un Junior Web Developer diplomato come Informatico di gestione SSS, ho esperienze nell'utilizzo di Laravel
         (MVC), sviluppo Front-End, WordPress,
         progettazione database e
@@ -227,8 +230,9 @@
     </div>
 
     <a href="#" data-toggle="modal" class="align-self-center underline font-weight-bold" data-target="#myModal"
-      style=" position:relative; top: 35px;">Maggiori
+      style=" position:relative; top: 35px; font-size: 1.5rem;">Maggiori
       informazioni</a>
+    </div>
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog modal-dialog-centered">
