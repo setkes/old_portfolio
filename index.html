@@ -105,17 +105,17 @@
 
       }
 
-      @media only screen and (max-width: 576px) and (-webkit-min-device-pixel-ratio: 2) {
+      @media only screen and (min: 576px) and (-webkit-min-device-pixel-ratio: 2) {
         img {
           display: none;
         }
 
         #info h1 {
-          font-size: 32px;
+          font-size: 3rem;
         }
 
         #text {
-          font-size: 24px;
+          font-size: 1.5rem;
         }
 
       }
@@ -192,7 +192,7 @@
 
 <body>
   <div class="container d-flex flex-column">
-    <div id="info" class="d-flex justify-content-between w-100 mb-2">
+    <div id="info" class="d-flex justify-content-between w-100 mb-2" style="position: relative; top: 35px;">
       <h1 class="align-self-center" style="font-size: 5rem;">
         Alessandro <span style="color: #6c6c6c;">Monti</span></h1>
     </div>
