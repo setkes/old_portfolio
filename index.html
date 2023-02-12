@@ -25,74 +25,77 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
+    html {
+      min-height: 100vh;
+    }
+
     * {
       padding: 0;
       margin: 0;
       box-sizing: border-box;
     }
 
+    a,
+    a:hover {
+      text-decoration: none;
+      color: #000000;
+
+    }
+
+
     li {
       list-style: none;
       margin-bottom: 25px;
     }
 
-    img {
-      float: right;
-      margin-left: 25px;
-    }
-
-    #myModal {
-      font-size: 3rem;
-    }
-
-    #text {
-      font-size: 3rem;
-    }
-
-    #contact:focus {
-      box-shadow: none;
-    }
 
 
+    @media only screen and (max-width: 576px) {
 
-    .hover:hover {
-      --_p: 0%;
-    }
+      #content{
+        position: relative;
+        top: 75px;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 35px;
+      }
 
-    body {
-      height: 100vh;
-      margin: 0;
-      display: grid;
+      p,
+      a,
+      h4 {
+        font-size: 1.5rem;
+      }
+
+  
 
     }
+ 
+    @media only screen and (min-width: 576px) {
 
-    #title {
-      font-size: 5rem;
+      .container{
+        height: 100vh;
+        position: relative;
+      }
+      #content {
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 35px;
+      }
+
+      p,
+      a,
+      h4 {
+        font-size: 2rem;
+      }
     }
 
-    #text{
-      font-size: 3rem;
-    }
-
-    #info{
-      padding: 55px !important;
-    }
-    h3 {
-      font-family: system-ui, sans-serif;
-      font-size: 3rem;
-      margin: 0;
-      cursor: pointer;
-      padding: 0 .1em;
-    }
-
-
-    a,
-    a:hover {
-      text-decoration: none;
-      color: #000000;
-      font-size: 1.5rem;
-      padding-bottom: 2px;
-    }
 
     .underline {
       position: relative;
@@ -115,126 +118,35 @@
         right: auto;
         width: 100%;
       }
-
-
-      @media screen and (min-width: 768px) {
-        body {
-          place-content: center;
-        }
-
-      }
-
-      @media only screen and (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) {
-        img {
-          display: none;
-        }
-
-        h1 {
-          font-size: 2.3rem;
-        }
-
-        #text {
-          font-size: 1.2rem;
-        }
-
-        #myModal {
-          font-size: 1.2rem;
-        }
-
-      }
-
-
-      svg {
-        width: 256px;
-        height: 256px;
-      }
-
-      /* SMOKE */
-      #smoke-1 {
-        stroke-dasharray: 0, 10;
-        animation: smoke 6s ease infinite;
-      }
-
-      #smoke-2 {
-        stroke-dasharray: 0, 10;
-        animation: smoke 6s 0.5s ease infinite;
-      }
-
-      @keyframes smoke {
-        0% {
-          stroke-dasharray: 0, 10;
-        }
-
-        50% {
-          stroke-dasharray: 10, 0;
-        }
-
-        100% {
-          stroke-dasharray: 10, 0;
-          opacity: 0;
-        }
-      }
-
-      /* WRITING */
-      #line-1 {
-        opacity: 0;
-        animation: writing 0.5s linear forwards;
-      }
-
-      #line-2 {
-        opacity: 0;
-        animation: writing 0.5s 1s linear forwards;
-      }
-
-      #line-3 {
-        opacity: 0;
-        animation: writing 0.5s 1.5s linear forwards;
-      }
-
-      #line-4 {
-        opacity: 0;
-        animation: writing 0.5s 2s linear forwards;
-      }
-
-      @keyframes writing {
-        0% {
-          width: 0px;
-          opacity: 1;
-        }
-
-        100% {
-          width: 14px;
-          opacity: 1;
-        }
-      }
     }
   </style>
 </head>
 
 <body>
-  <div class=" d-flex flex-column" style="position: relative; top: 35px;">
-    <div id="info" class="p-2">
-      <div class="d-flex justify-content-between w-100 mb-2">
-        <h1 id="title" class="align-self-center">
-          Alessandro <span style="color: #6c6c6c;">Monti</span></h1>
-      </div>
-      <div class="square w-100 d-flex">
-        <p id="text">
-          Sono un Junior Web Developer diplomato come Informatico di gestione SSS, ho esperienze nell'utilizzo di
-          Laravel
-          (MVC), sviluppo Front-End, WordPress,
-          progettazione database e
-          attualmente sto studiando React.js.
-          <br><br>
-          Mi trovo bene a lavorare sia in gruppo che in autonomia, ho un pensiero analitico e sono sempre pronto ad
-          accettare nuove sfide e responsabilità.
-        </p>
-      </div>
-      <a href="#" data-toggle="modal" class="align-self-center underline font-weight-bold" data-target="#myModal"
-        style=" position:relative; top: 35px; font-size: 3.3rem;">
+  <div class="container">
+
+
+    <div id="content" class="d-flex flex-column">
+      <h1>Alessandro <span style="color: #6c6c6c;">Monti</span></h1>
+      </h1>
+      <p id="text">
+        Sono un Junior Web Developer diplomato come Informatico di gestione SSS, ho esperienze nell'utilizzo di
+        Laravel
+        (MVC), sviluppo Front-End, WordPress,
+        progettazione database e
+        attualmente sto studiando React.js.
+        <br><br>
+        Mi trovo bene a lavorare sia in gruppo che in autonomia, ho un pensiero analitico e sono sempre pronto ad
+        accettare nuove sfide e responsabilità.
+      </p>
+      <br>
+      <br>
+  
+      <a href="#" data-toggle="modal" class="align-self-center underline font-weight-bold" data-target="#myModal">
         Maggiori informazioni</a>
     </div>
-    <!-- Modal -->
+
+
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog modal-dialog-centered">
         <!-- Modal content-->
@@ -259,11 +171,7 @@
         </div>
       </div>
     </div>
-
   </div>
-  <footer class="text-center" style="display: none;height: 25px; position:fixed; bottom:0;">
-    <p>Copyright © 2023 - Alessandro Monti </p>
-  </footer>
 </body>
 
 </html>
