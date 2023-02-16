@@ -130,6 +130,14 @@
         width: 100%;
       }
     }
+
+  /* This only changes this particular animation duration */
+.animate__animated.animate__backInUp {
+  --animate-duration: 4s;
+  --animate-delay: 0.9s;
+}
+
+
   </style>
 </head>
 
@@ -140,7 +148,7 @@
     <div id="content" class="d-flex flex-column">
       <h1 class="animate__animated animate__bounceInDown">Alessandro <span style="color: #6c6c6c;">Monti</span></h1>
      
-      <div id="info" class="d-flex mb-5">
+      <div id="info" class="d-flex mb-5 animate__animated animate__jackInTheBox">
 
 
         <p id="text">
@@ -159,7 +167,7 @@
 
 
       </div>
-      <a href="#" data-toggle="modal" class="align-self-center underline font-weight-bold" data-target="#myModal">
+      <a href="#" data-toggle="modal" class="animate__animated animate__backInUp align-self-center underline font-weight-bold" data-target="#myModal">
         Maggiori informazioni</a>
     </div>
 
