@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <title>Alessandro Monti - Portfolio</title>
@@ -8,14 +7,9 @@
   <meta name="description" content="Sito web personale di Alessandro Monti">
   <link rel="stylesheet" type="text/css" href="index.css">
   <meta name="theme-color" content="#6c6c6c" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="icon" type="image/png" href="/media/a.png" />
- 
   <script defer src="/js/index.js"></script>
- 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -34,9 +28,11 @@
     html {
       min-height: 100vh;
     }
+
     body {
-  overflow: hidden; /* Hide scrollbars */
-}
+      overflow: hidden;
+     
+    }
 
     * {
       padding: 0;
@@ -55,9 +51,12 @@
       padding: 10px;
     }
 
-    li a:hover{
-      color: rgb(0, 26, 171);
+    li a:hover {
+      color: rgb(0, 106, 255);
+     
     }
+
+
 
     @media only screen and (max-width: 576px) {
 
@@ -73,16 +72,11 @@
 
       p,
       a,
-      h4 { 
+      h4 {
         font-size: 1.2em;
-       
+
       }
-
-
-
     }
-
-
 
     @media only screen and (min-width: 576px) {
 
@@ -110,7 +104,6 @@
       }
     }
 
-
     .underline {
       position: relative;
     }
@@ -134,26 +127,24 @@
       }
     }
 
-  /* This only changes this particular animation duration */
-.animate__animated.animate__backInUp {
-  --animate-duration: 4s;
-  --animate-delay: 0.9s;
-}
 
+    .animate__animated.animate__backInUp {
+      --animate-duration: 4s;
+      --animate-delay: 0.9s;
+    }
 
+    .animate__animated.animate__flipInX{
+      --animate-duration: 2s;
+      --animate-delay: 2s;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-
-
     <div id="content" class="d-flex flex-column">
       <h1 class="animate__animated animate__bounceInDown">Alessandro <span style="color: #6c6c6c;">Monti</span></h1>
-     
       <div id="info" class="d-flex mb-5 animate__animated animate__jackInTheBox">
-
-
         <p id="text">
           Sono un Junior Web Developer diplomato come Informatico di gestione SSS, ho esperienze nell'utilizzo di
           Laravel
@@ -164,17 +155,11 @@
           Mi trovo bene a lavorare sia in gruppo che in autonomia, ho un pensiero analitico e sono sempre pronto ad
           accettare nuove sfide e responsabilità.
         </p>
-
-
-
-
-
       </div>
-      <a href="#" data-toggle="modal" class="animate__animated animate__backInUp align-self-center underline font-weight-bold" data-target="#myModal">
+      <a href="#" data-toggle="modal"
+        class="animate__animated animate__backInUp align-self-center underline font-weight-bold" data-target="#myModal">
         Maggiori informazioni</a>
     </div>
-
-
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog modal-dialog-centered">
         <!-- Modal content-->
@@ -185,12 +170,11 @@
           </div>
           <div class="modal-body d-flex flex-column  text-center">
             <p>
-              <li>
+              <li class="animate__animated animate__flipInX">
                 <a href="https://www.linkedin.com/in/monti-alessandro/" class=""><i
-                    class="fa-brands fa-linkedin fa-md"></i>
-                  Linkedin</a>
+                    class="fa-brands fa-linkedin fa-md "></i>Linkedin</a>
               </li>
-              <li>
+              <li class="animate__animated animate__flipInX">
                 <a href="https://github.com/alemonti95?tab=repositories" class=""> <i
                     class="fa-brands fa-github fa-md"></i> Github</a>
               </li>
@@ -201,5 +185,4 @@
     </div>
   </div>
 </body>
-
 </html>
