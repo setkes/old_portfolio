@@ -8,6 +8,9 @@
   <meta name="description" content="Sito web personale di Alessandro Monti">
   <link rel="stylesheet" type="text/css" href="index.css">
   <meta name="theme-color" content="#6c6c6c" />
+  <meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; img-src https://*; child-src 'none';" />
   <link rel="icon" type="image/png" href="/media/a.png" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sketch.js/1.0/sketch.js"></script>
   <script defer src="/js/index.js"></script>
@@ -50,7 +53,9 @@
       padding: 10px;
     }
 
-
+    li a:hover{
+      color: red;
+    }
 
     @media only screen and (max-width: 576px) {
 
