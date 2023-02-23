@@ -61,6 +61,16 @@
         top: 75px;
       }
 
+      #php {
+        position: relative;
+        bottom: 10px;
+        left: 5px;
+      }
+
+      #bootstrap {
+        padding-right: 5px;
+      }
+
       h1 {
         font-size: 2.1em;
         margin-bottom: 35px;
@@ -114,6 +124,8 @@
 
         color: #ccd6f6;
       }
+
+
 
       svg {
         margin-right: 15px;
@@ -307,10 +319,11 @@
 <body>
   <div class="container">
     <div id="content" class="d-flex flex-column">
-      <div id="header" class="d-flex flex-column flex-md-row">
-        <h1 class="animate__animated animate__bounceInDown mr-5">Alessandro <span style="color: #ede613;">Monti</span>
+      <div id="header" class="d-flex flex-column flex-lg-row">
+        <h1 class="animate__animated animate__bounceInDown mr-5 w-75">Alessandro <span
+            style="color: #ede613;">Monti</span>
         </h1>
-        <div id="icons" class="animate__animated animate__bounceInRight mt-2 d-flex w-50 mb-4">
+        <div id="icons" class="animate__animated animate__bounceInRight mt-2 d-flex w-100 ">
           <div tooltip="Javascript">
             <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
               <path fill="#F7DF1E" d="M0 0h256v256H0V0Z" />
@@ -324,8 +337,13 @@
                 d="M255.856 59.62c.095.351.144.713.144 1.077v56.568c0 1.478-.79 2.843-2.073 3.578L206.45 148.18v54.18a4.135 4.135 0 0 1-2.062 3.579l-99.108 57.053c-.227.128-.474.21-.722.299c-.093.03-.18.087-.278.113a4.15 4.15 0 0 1-2.114 0c-.114-.03-.217-.093-.325-.134c-.227-.083-.464-.155-.68-.278L2.073 205.938A4.128 4.128 0 0 1 0 202.36V32.656c0-.372.052-.733.144-1.083c.031-.119.103-.227.145-.346c.077-.216.15-.438.263-.639c.077-.134.19-.242.283-.366c.119-.165.227-.335.366-.48c.119-.118.274-.206.408-.309c.15-.124.283-.258.453-.356h.005L51.613.551a4.135 4.135 0 0 1 4.125 0l49.546 28.526h.01c.165.104.305.232.454.351c.134.103.284.196.402.31c.145.149.248.32.371.484c.088.124.207.232.279.366c.118.206.185.423.268.64c.041.118.113.226.144.35c.095.351.144.714.145 1.078V138.65l41.286-23.773V60.692c0-.36.052-.727.145-1.072c.036-.124.103-.232.144-.35c.083-.217.155-.44.268-.64c.077-.134.19-.242.279-.366c.123-.165.226-.335.37-.48c.12-.118.269-.206.403-.309c.155-.124.289-.258.454-.356h.005l49.551-28.526a4.13 4.13 0 0 1 4.125 0l49.546 28.526c.175.103.309.232.464.35c.128.104.278.197.397.31c.144.15.247.32.37.485c.094.124.207.232.28.366c.118.2.185.423.267.64c.047.118.114.226.145.35Zm-8.115 55.258v-47.04l-17.339 9.981l-23.953 13.792v47.04l41.297-23.773h-.005Zm-49.546 85.095V152.9l-23.562 13.457l-67.281 38.4v47.514l90.843-52.3ZM8.259 39.796v160.177l90.833 52.294v-47.505L51.64 177.906l-.015-.01l-.02-.01c-.16-.093-.295-.227-.444-.34c-.13-.104-.279-.186-.392-.3l-.01-.015c-.134-.129-.227-.289-.34-.433c-.104-.14-.227-.258-.31-.402l-.005-.016c-.093-.154-.15-.34-.217-.515c-.067-.155-.154-.3-.196-.464v-.005c-.051-.196-.061-.403-.082-.604c-.02-.154-.062-.309-.062-.464V63.57L25.598 49.772l-17.339-9.97v-.006ZM53.681 8.893L12.399 32.656l41.272 23.762L94.947 32.65L53.671 8.893h.01Zm21.468 148.298l23.948-13.786V39.796L81.76 49.778L57.805 63.569v103.608l17.344-9.986ZM202.324 36.935l-41.276 23.762l41.276 23.763l41.271-23.768l-41.27-23.757Zm-4.13 54.676l-23.953-13.792l-17.338-9.981v47.04l23.948 13.787l17.344 9.986v-47.04Zm-94.977 106.006l60.543-34.564l30.264-17.272l-41.246-23.747l-47.489 27.34l-43.282 24.918l41.21 23.325Z" />
             </svg>
           </div>
-          <div tooltip="Bootstrap">
-            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="40.16" height="32" viewBox="0 0 256 204">
+          <div tooltip="PHP" style="margin-right: 15px;">
+            <img id="php" width="50"
+              src="https://cdn.iconscout.com/icon/free/png-256/php-2038871-1720084.png?f=webp&amp;w=256"
+              srcset="https://cdn.iconscout.com/icon/free/png-256/php-2038871-1720084.png?f=webp&amp;w=256 1x, https://cdn.iconscout.com/icon/free/png-256/php-2038871-1720084.png?f=webp&amp;w=512 2x">
+          </div>
+          <div id="bootstrap" tooltip="Bootstrap">
+            <svg class="" xmlns="http://www.w3.org/2000/svg" width="40.16" height="32" viewBox="0 0 256 204">
               <path fill="#7E13F8"
                 d="M53.172 0C38.565 0 27.756 12.785 28.24 26.65c.465 13.32-.139 30.573-4.482 44.642C19.402 85.402 12.034 94.34 0 95.488v12.956c12.034 1.148 19.402 10.086 23.758 24.197c4.343 14.069 4.947 31.32 4.482 44.641c-.484 13.863 10.325 26.65 24.934 26.65h149.673c14.608 0 25.414-12.785 24.93-26.65c-.464-13.32.139-30.572 4.482-44.641c4.359-14.11 11.707-23.05 23.741-24.197V95.488c-12.034-1.148-19.382-10.086-23.74-24.196c-4.344-14.067-4.947-31.321-4.483-44.642C228.261 12.787 217.455 0 202.847 0H53.17h.002ZM173.56 125.533c0 19.092-14.24 30.67-37.872 30.67h-40.23a4.339 4.339 0 0 1-4.338-4.339V52.068a4.339 4.339 0 0 1 4.339-4.34h39.999c19.705 0 32.637 10.675 32.637 27.063c0 11.503-8.7 21.801-19.783 23.604v.601c15.089 1.655 25.248 12.104 25.248 26.537Zm-42.26-64.05h-22.937v32.4h19.32c14.934 0 23.17-6.014 23.17-16.764c0-10.073-7.082-15.636-19.552-15.636Zm-22.937 45.256v35.705h23.782c15.548 0 23.786-6.239 23.786-17.965c0-11.728-8.467-17.742-24.786-17.742h-22.782v.002Z" />
             </svg>
@@ -370,7 +388,7 @@
 
           <div tooltip="jQuery">
 
-            <svg id="jquery" class=" mt-1" xmlns="http://www.w3.org/2000/svg" width="100" height="28"
+            <svg id="jquery" class="mt-1" xmlns="http://www.w3.org/2000/svg" width="100" height="28"
               viewBox="0 0 512 116">
               <g fill="none" fill-rule="evenodd">
                 <path fill="#ccd6f6"
@@ -414,8 +432,8 @@
     </div>
   </div>
   </div>
-  <footer style="position: fixed; bottom:0;" class="d-flex justify-content-center align-content-center w-100">
-    <p>© 2023 - Alessandro Monti </p>
+  <footer style="position: fixed; bottom:0;" class="d-flex justify-content-center align-content-center w-100 ">
+    <p class="animate__animated animate__bounceInUp">© 2023 - Alessandro Monti </p>
   </footer>
 </body>
 <script>
